@@ -1,0 +1,173 @@
+/**
+ * Created by dfi on 17.07.17.
+ */
+@import url('https://www.fontify.me/wf/9f9d9bbf7c8e948484aeaac1cf53a5aa');
+*{
+    margin:0;
+    padding:0;
+    font-family: font111270;
+}
+html, body{
+
+    height: 100%;
+}
+/*
+only responsible for max size. content container: main body part and handling
+ */
+.sizeContainer{
+    max-width: 1720px;
+    margin: 0 auto;
+
+}
+
+
+/*
+used to modify main content (nav and content div)
+ */
+.sizeContainer2{
+    margin: 0 auto 0 auto;
+    height:100%;
+    max-width: 1920px;
+
+}
+
+
+/*
+main part
+
+ */
+
+
+.nav_sidebar{
+    border-top-left-radius: 8px ;
+    visibility: visible;
+    margin-top: 0px;
+    float: right;
+    position: relative;
+    height: 100%;
+    width: 300px;
+    background-color: #EEEEEE;
+
+
+    -webkit-transition: width 2s;
+    -moz-transition: width 2s;
+    -ms-transition: width 2s;
+    -o-transition: width 2s;
+    transition: width 1.2s;
+
+}
+.sidebarClosed{
+    width: 0px;
+}
+
+#bodycontentContainer{
+    width: 555px;
+    height: 100%;
+    margin-top: 67px;
+    background-color: red;
+    border: 1px solid red;
+
+}
+
+
+
+
+#starterLogo{
+    margin-top: 6px;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+
+}
+#logoPacket{
+    margin-left:12px;
+}
+#nav_htlDonaustadt{
+    text-align: match-parent;
+    display: inline-block;
+    line-height: 46px;
+    margin-left: 14px;
+    position: absolute;
+    color: #2095f1;
+    font-size: 20px;
+
+}
+
+#navigation-bar{
+
+    padding: 12px 17px 0px 17px;
+    color: #2095f1;
+    height:67px;
+    width:100%;
+    box-sizing: border-box;
+    box-shadow: 0 -7px 50px rgba(0,0,0,0.19), 0 -3px 12px rgba(0,0,0,0.23);
+
+
+}
+
+/*
+Here beginns the hamburger
+ */
+#wrapper {
+    float: right;
+    background:white;
+    display:inline-block;
+    border-radius:7px;
+    margin:0px;
+    padding:11px;
+    z-index: 1000px;
+    cursor:pointer;
+    /*border: 1px solid ;*/
+    border-box: box-sizing;
+    line-height: 444px;
+
+}
+
+.main-item {
+    width:20px;
+    height:20px;
+    position:relative;
+}
+
+.line {
+    position: absolute;
+    height: 2px;
+    width:100%;
+    background: #2095f1;
+;
+    border-radius:16px;
+    transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.4s;
+}
+
+.line01 {
+    top:12%;
+}
+
+.line02 {
+    top:49%;
+}
+
+.line03 {
+    top:79%;
+}
+
+.menu.close .line01 {
+    transform:rotate(45deg);
+    top:49%;
+}
+
+.menu.close .line02, .menu.close .line03 {
+    transform:rotate(-45deg);
+    top:49%;
+}
+
+
+@media (min-width: 1400px) {
+
+    .sizeContainer2{
+        margin: 0 auto 0 auto;
+        height:100%;
+        max-width: 3240px;
+
+    }
+}
